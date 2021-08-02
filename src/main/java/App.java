@@ -1,3 +1,7 @@
+import encryptions.encrypt;
+import encryptions.decrypt;
+
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -16,7 +20,7 @@ public class App {
             if(key < 1 || key > 25){
                 System.out.println("The key must be between 1 and 25");
             }else{
-                Encrypt encrypt = new Encrypt();
+                encrypt encrypt = new encrypt();
                 String encrypted = encrypt.encoding(inputText,key);
                 System.out.println("Your encrypted text is: ");
                 System.out.println(encrypted);
@@ -25,7 +29,7 @@ public class App {
                 String choice = bufferedReader.readLine();
 
                 if(choice.toLowerCase().equals("y")){
-                    Decrypt decrypt = new Decrypt(encrypted,key);
+                    decrypt decrypt = new decrypt(encrypted,key);
                     decrypt.Decode();
                     String decrypted = decrypt.getDecrypted();
 
