@@ -36,9 +36,9 @@ public class App {
                     System.out.println("Your decrypted text is: ");
                     System.out.println(decrypted);
                     System.out.println();
-                    System.out.println("Thank you for using our service!");
+                    System.out.println("Thank you for using our decryption service!");
                 }else if(choice.toLowerCase().equals("n")){
-                    System.out.println("Thank you for using our service!");
+                    System.out.println("Thank you for using this encryption service!");
                 }else {
                     System.out.println("Please enter Y/N");
                 }
